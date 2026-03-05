@@ -174,11 +174,9 @@ const Hero = () => {
           </a>
 
           <a
-            href="/assets/CV_Spanish.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="CV Spanish"
-            aria-label="Open CV in Spanish"
+            href="mailto:agustinballesteros04@gmail.com?subject=CV%20request%20(Spanish)"
+            title="Request CV Spanish"
+            aria-label="Request CV in Spanish by email"
             className="terminal-window group relative flex h-14 w-14 items-center justify-center rounded-sm border border-cyber-blue/45 bg-void/80 text-cyber-blue shadow-[0_0_14px_rgba(0,204,255,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-110 hover:border-cyber-blue hover:text-cyber-blue hover:shadow-[0_0_28px_rgba(0,204,255,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyber-blue/60"
           >
             <FileText className="h-5 w-5" />
@@ -188,11 +186,9 @@ const Hero = () => {
           </a>
 
           <a
-            href="/assets/CV_English.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="CV English"
-            aria-label="Open CV in English"
+            href="mailto:agustinballesteros04@gmail.com?subject=CV%20request%20(English)"
+            title="Request CV English"
+            aria-label="Request CV in English by email"
             className="terminal-window group relative flex h-14 w-14 items-center justify-center rounded-sm border border-mint/45 bg-void/80 text-mint/90 shadow-[0_0_14px_rgba(0,255,157,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-110 hover:border-mint hover:text-mint-light hover:shadow-[0_0_28px_rgba(0,255,157,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60"
           >
             <FileText className="h-5 w-5" />
