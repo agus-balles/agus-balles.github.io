@@ -8,7 +8,6 @@ import {
   Terminal,
   MapPin,
   ExternalLink,
-  Phone,
   Globe
 } from 'lucide-react';
 import TerminalWindow from '../components/TerminalWindow';
@@ -431,21 +430,6 @@ const Contact = () => {
                     <p className="font-mono text-sm text-foreground group-hover:text-mint transition-colors flex items-center gap-1 min-w-0">
                       <span className="break-all">github.com/agus-balles</span>
                       <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="tel:[redacted]"
-                  className="flex min-w-0 items-center gap-4 p-3 rounded-lg hover:bg-muted transition-colors group"
-                >
-                  <div className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-foreground" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="font-mono text-sm text-muted-foreground">PHONE</p>
-                    <p className="font-mono text-sm text-foreground group-hover:text-mint transition-colors">
-                      [redacted]
                     </p>
                   </div>
                 </a>
