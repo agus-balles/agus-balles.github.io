@@ -472,7 +472,7 @@ const Contact = () => {
               title="stats.json"
               contentClassName="p-6"
             >
-              <pre className="font-mono text-sm text-muted-foreground overflow-x-auto">
+              <pre className="font-mono text-sm text-muted-foreground overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre sm:break-normal">
 {`{
   "primary_focus": "Full-stack apps + Linux infrastructure",
   "response_time": "< 24h",

@@ -73,15 +73,15 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen flex flex-col justify-center items-center px-4 overflow-hidden"
+      className="relative min-h-[100svh] sm:min-h-screen flex flex-col justify-center items-center px-4 pt-20 pb-10 sm:pt-0 sm:pb-0 overflow-hidden"
     >
       {/* Matrix rain background effect */}
       <MatrixRain />
 
       {/* Main content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
+      <div className="relative z-10 w-full text-center max-w-4xl mx-auto">
         {/* Status indicator */}
-        <div className="flex items-center justify-center gap-2 mb-8 font-mono text-sm text-muted-foreground">
+        <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 mb-6 sm:mb-8 px-2 font-mono text-[11px] sm:text-sm text-muted-foreground">
           <span className="w-2 h-2 bg-mint rounded-full animate-pulse" />
           <span>[SYSTEM READY]</span>
           <span className="text-mint/50">|</span>
@@ -93,7 +93,7 @@ const Hero = () => {
         {/* Main title */}
         <h1
           ref={titleRef}
-          className="font-mono text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-mint mb-4 glow-text tracking-tight"
+          className="font-mono text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-mint mb-4 glow-text tracking-tight leading-tight"
         >
           {titleChars}
         </h1>
@@ -101,29 +101,29 @@ const Hero = () => {
         {/* Subtitle */}
         <p
           ref={subtitleRef}
-          className="font-mono text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8"
+          className="font-mono text-base sm:text-xl md:text-2xl text-foreground/80 mb-8 px-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1"
         >
           <span className="text-mint">FULLSTACK_DEV</span>
-          <span className="text-muted-foreground"> // </span>
+          <span className="text-muted-foreground">//</span>
           <span>SYSTEMS_ADMIN</span>
-          <span className="text-muted-foreground"> // </span>
+          <span className="text-muted-foreground">//</span>
           <span className="text-cyber-blue">OPEN_SOURCE</span>
         </p>
 
         {/* Command prompt */}
         <div
           ref={promptRef}
-          className="font-mono text-sm sm:text-base text-muted-foreground mb-12"
+          className="font-mono text-xs sm:text-base text-muted-foreground mb-10 sm:mb-12 px-2 break-words"
         >
           <span className="text-mint">{'>'}</span>{' '}
           <span className="typing-cursor">{typedText}</span>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex w-full flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-2">
           <a
             href="#projects"
-            className="group relative px-8 py-3 bg-mint text-void font-mono font-medium rounded-sm overflow-hidden transition-all hover:shadow-glow"
+            className="group relative w-full max-w-xs sm:w-auto px-8 py-3 bg-mint text-void font-mono font-medium rounded-sm overflow-hidden transition-all hover:shadow-glow"
             onClick={(e) => {
               e.preventDefault();
               document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -137,31 +137,31 @@ const Hero = () => {
             href="https://github.com/agus-balles"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 border border-border text-muted-foreground font-mono text-sm rounded-sm hover:border-mint hover:text-mint transition-all"
+            className="flex w-full max-w-xs sm:w-auto min-w-0 items-center justify-center gap-2 px-6 py-3 border border-border text-muted-foreground font-mono text-sm rounded-sm hover:border-mint hover:text-mint transition-all"
           >
-            <Github className="w-4 h-4" />
-            <span>github.com/agus-balles</span>
+            <Github className="w-4 h-4 shrink-0" />
+            <span className="break-all text-center">github.com/agus-balles</span>
           </a>
         </div>
 
         {/* Quick stats */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mt-12 text-xs font-mono text-muted-foreground">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-10 sm:mt-12 px-2 text-[11px] sm:text-xs font-mono text-muted-foreground">
+          <div className="flex items-center gap-2 min-w-0">
             <GitBranch className="w-4 h-4 text-mint" />
-            <span>FULLSTACK_DEV_2025_2026</span>
+            <span className="break-all">FULLSTACK_DEV_2025_2026</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 min-w-0">
             <span className="w-4 h-4 flex items-center justify-center text-mint">#</span>
-            <span>SYSADMIN_2022_2025</span>
+            <span className="break-all">SYSADMIN_2022_2025</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 min-w-0">
             <span className="w-4 h-4 flex items-center justify-center text-mint">~</span>
-            <span>EN_ES_BILINGUAL</span>
+            <span className="break-all">EN_ES_BILINGUAL</span>
           </div>
         </div>
 
         {/* Profile/CV buttons */}
-        <div className="flex items-center justify-center gap-5 mt-14 sm:mt-16">
+        <div className="flex flex-wrap items-center justify-center gap-5 mt-12 sm:mt-16">
           <a
             href="https://linkedin.com/in/agustin-ballesteros-agus-balles"
             target="_blank"
@@ -204,7 +204,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 text-muted-foreground">
         <span className="font-mono text-xs">SCROLL_DOWN</span>
         <ChevronDown className="w-5 h-5 animate-bounce" />
       </div>

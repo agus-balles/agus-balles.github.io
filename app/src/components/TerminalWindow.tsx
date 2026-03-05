@@ -125,7 +125,7 @@ const TerminalWindow = ({
                 : 'calc(100dvh - var(--expanded-pad-top) - var(--expanded-pad-bottom))',
           }}
         >
-          <div className="terminal-header relative z-20 shrink-0 sticky top-0">
+          <div className="terminal-header relative z-20 shrink-0 sticky top-0 min-w-0">
             <button
               type="button"
               aria-label="Close expanded window"
@@ -143,7 +143,7 @@ const TerminalWindow = ({
               aria-label="Expanded window"
               className="terminal-dot green border-0 p-0 shrink-0"
             />
-            <span className="ml-2 font-mono text-xs text-muted-foreground flex items-center gap-2">
+            <span className="ml-2 min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap sm:overflow-visible sm:whitespace-normal sm:text-clip font-mono text-xs text-muted-foreground flex items-center gap-2">
               {title}
             </span>
           </div>
@@ -185,26 +185,26 @@ const TerminalWindow = ({
           />
         </div>
 
-        <div className="terminal-header">
+        <div className="terminal-header min-w-0">
           <button
             type="button"
             aria-label="Close window"
-            className="terminal-dot red border-0 p-0 cursor-pointer"
+            className="terminal-dot red border-0 p-0 cursor-pointer shrink-0"
             onClick={closeExpanded}
           />
           <button
             type="button"
             aria-label="Minimize window"
-            className="terminal-dot yellow border-0 p-0 cursor-pointer"
+            className="terminal-dot yellow border-0 p-0 cursor-pointer shrink-0"
             onClick={closeExpanded}
           />
           <button
             type="button"
             aria-label="Expand window"
-            className={`terminal-dot green border-0 p-0 ${expandable ? 'cursor-pointer' : 'cursor-default'}`}
+            className={`terminal-dot green border-0 p-0 shrink-0 ${expandable ? 'cursor-pointer' : 'cursor-default'}`}
             onClick={openExpanded}
           />
-          <span className="ml-2 font-mono text-xs text-muted-foreground flex items-center gap-2">
+          <span className="ml-2 min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap sm:overflow-visible sm:whitespace-normal sm:text-clip font-mono text-xs text-muted-foreground flex items-center gap-2">
             {title}
           </span>
         </div>
