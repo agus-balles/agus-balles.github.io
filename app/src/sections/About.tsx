@@ -124,12 +124,21 @@ const About = () => {
               <div>
                 <pre className="text-muted-foreground overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre sm:break-normal">
 {`{
-  "program": "Master in Computer Science (MSc/LSc)",
-  "institution": "Universidad de Buenos Aires",
-  "status": "Fourth Year Student",
-  "period": "06/2022 - 06/2027",
-  "additional_degrees": [
-    "Bachelor's in Software Development (06/2022 - 06/2025)",
+  "degrees": [
+    {
+      "degree": "BSc in Computer Science",
+      "institution": "Universidad de Buenos Aires",
+      "period": "06/2022 - 06/2025",
+      "status": "Completed"
+    },
+    {
+      "degree": "MSc/LSc in Computer Science",
+      "institution": "Universidad de Buenos Aires",
+      "period": "06/2022 - 06/2027",
+      "status": "Fourth Year Student"
+    }
+  ],
+  "previous_education": [
     "Economic Sciences - Bartolome Mitre Day School (01/2017 - 11/2022, average: 9/10)"
   ],
   "focus": [
