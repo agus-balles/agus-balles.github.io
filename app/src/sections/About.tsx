@@ -139,7 +139,8 @@ const About = () => {
     }
   ],
   "previous_education": [
-    "Economic Sciences - Bartolome Mitre Day School (01/2017 - 11/2022, average: 9/10)"
+    "Economic Sciences - Bartolome Mitre Day School 
+                (01/2017 - 11/2022, average: 9/10)"
   ],
   "focus": [
     "Backend Architecture",

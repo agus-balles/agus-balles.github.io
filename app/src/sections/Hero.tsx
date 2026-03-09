@@ -204,7 +204,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 text-muted-foreground">
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 text-muted-foreground">
         <span className="font-mono text-xs">SCROLL_DOWN</span>
         <ChevronDown className="w-5 h-5 animate-bounce" />
       </div>
