@@ -163,7 +163,7 @@ const Hero = () => {
         {/* Profile/CV buttons */}
         <div className="flex flex-wrap items-center justify-center gap-5 mt-12 sm:mt-16">
           <a
-            href="https://linkedin.com/in/agustin-ballesteros-agus-balles"
+            href="https://linkedin.com/in/agustin-ballesteros-"
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
